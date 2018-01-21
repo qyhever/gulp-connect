@@ -10,5 +10,15 @@
 		<a href="./views/login.html">登录</a>
 		<a href="./views/register.html">注册</a>
 	</div>
+	<div class="box"></div>
 </body>
+<script src="lib/jquery-3.2.1.js"></script>
+<script>
+	$.ajax({
+		url: '/douban/top250',
+		success: function(data){
+			console.log(data);
+		}
+	})
+</script>
 </html>
